@@ -223,10 +223,8 @@ def show_reviews(config: Dict[str, Any], suppress_notifications: bool) -> None:
                             "notify-send",
                             "--expire-time=15000",
                             f"New comment on MR !{mr.id}",
-                            (
-                                f"{last_message['author']['name']} writes:\n\n"
-                                f"{last_message['body']}"
-                            ),
+                            f"{last_message['author']['name']} writes:\n\n",
+                            f"{last_message['body']}",
                         ]
                     )
 
