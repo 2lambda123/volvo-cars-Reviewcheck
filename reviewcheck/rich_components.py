@@ -130,7 +130,7 @@ class RichGenerator:
         info += f"\nOpen discussions: {mr.number_of_open_threads}"
         if mr.number_of_open_threads:
             info += (
-                f"\nOpen discussions where you are involved: "
+                "\nOpen discussions where you are involved: "
                 f"{mr.number_of_open_threads_for_user}"
             )
             info += "\nOpen discussions you need to respond (colored border): "
